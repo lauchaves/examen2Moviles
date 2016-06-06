@@ -4,7 +4,7 @@ Transaction Controller
 
 */
 
-var transactionService = require('../businessLogic/transactionService.js');
+var transactionService = require('../services/transactionService.js');
 
 exports.getTransaction = function(eRequest, eResponse) {
     transactionService.getTransaction(function(data){

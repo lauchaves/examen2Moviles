@@ -3,7 +3,7 @@
 User Controller
 
 */
-var usersService = require('../businessLogic/usersService.js'); 
+var usersService = require('../services/usersService.js'); 
 
 exports.getUsers = function(eRequest, eResponse) {
     usersService.getUsers(function(data){

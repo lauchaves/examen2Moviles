@@ -2,8 +2,6 @@
 
 General server configuration
 
-
-
 /*********************************************************************************************/
 
 bodyParser = require('body-parser');
