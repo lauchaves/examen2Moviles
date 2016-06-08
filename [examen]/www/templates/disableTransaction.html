@@ -1,11 +1,14 @@
 <ion-view title="Disable Transaction" id="page7" class=" ">
     <ion-content padding="true" class="has-header">
         <form id="disableTransaction-form4" class="list ">
-            <label class="item item-select " id="disableTransaction-select9">
-                <span class="input-label">Id:</span>
-                <select></select>
-            </label>
+                <label class="item item-select " id="disableTransaction-select7">
+                    <span class="input-label" >Status:</span>
+                    <select id="selectT">
+                        <option>Active</option>
+                        <option>Inactive</option>
+                    </select>
+                </label>
         </form>
-        <button id="disableTransaction-button4" class=" button button-positive  button-block ">Disable</button>
+        <button ng-click="changeStatus();" id="disableTransaction-button4" class=" button button-positive  button-block ">Change</button>
     </ion-content>
 </ion-view>

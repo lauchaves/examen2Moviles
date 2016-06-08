@@ -1,9 +1,18 @@
 <ion-view title="Transaction List" id="page8" class=" ">
-    <ion-content padding="true" class="has-header">
-        <ion-list id="transactionList-list7" class=" ">
-            <ion-item id="transactionList-list-item15" class="  ">Item 1</ion-item>
-            <ion-item id="transactionList-list-item16" class="  ">Item 2</ion-item>
-            <ion-item id="transactionList-list-item17" class="  ">Item 3</ion-item>
+    <ion-content padding="true" class="has-header" >
+       <h3>
+           <button ng-click="getList();" class="button button-small button-outline icon-right ion-refresh button-light">Refresh Transactions</button>
+        </h3>
+        
+        <ion-list id="transactionList-list7" class=" " ng-init="getList();" >
+            <ion-item ng-repeat="trans in myTransList" ng-click="getCurrentTrans({{trans}}); popup();"> 
+                <p><b>Type:</b>  {{trans.type}}</p>
+                <p><b>Rode:</b>  {{trans.rode}}</p>
+                <p><b>Status:</b> {{trans.status}}</p>
+                <p><b>Date:</b>  {{trans.date}}</p>
+                <br>
+
+            </ion-item>
         </ion-list>
     </ion-content>
 </ion-view>

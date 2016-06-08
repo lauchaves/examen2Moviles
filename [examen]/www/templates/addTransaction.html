@@ -5,7 +5,7 @@
 
                 <label class="item item-select " id="addTransaction-select1">
                     <span class="input-label">Type:</span>
-                    <select id="selectT">
+                    <select id="selectT" ng-model="addTrans.selectT">
                         <option>Debit</option>
                         <option>Credit</option>
                     </select>
@@ -13,7 +13,7 @@
             </ion-list>
             <label class="item item-input " id="addTransaction-input11">
                 <span class="input-label">Rode:</span>
-                <input type="text" placeholder="" ng-model="data.rode">
+                <input type="text" placeholder="" ng-model="addTrans.rode">
             </label>
             <label class="item item-select " id="addTransaction-select2">
                 <span class="input-label">Status:</span>
@@ -24,9 +24,9 @@
             </label>
             <label class="item item-input " id="addTransaction-input15">
                 <span class="input-label">Date:</span>
-                <input type="text" placeholder="" ng-model="data.date">
+                <input type="text" placeholder="" ng-model="addTrans.date">
             </label>
-            <button id="addTransaction-button2" class=" button button-positive  button-block ">Add</button>
+            <button ng-click="transRegister()";id="addTransaction-button2" class=" button button-positive  button-block ">Add</button>
         </form>
     </ion-content>
 </ion-view>

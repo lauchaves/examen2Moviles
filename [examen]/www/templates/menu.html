@@ -20,19 +20,19 @@
                 <ion-item class="item-icon-right  " id="menu-list-item10" ui-sref="menu.addTransaction" menu-close="">Add Transactions
                     <i class="icon ion-android-add-circle"></i>
                 </ion-item>
-                <ion-item class="item-icon-right  " id="menu-list-item3" ui-sref="menu.editTransaction" menu-close="">Edit Transactions
+                <ion-item ng-show="editTransaction" class="item-icon-right  " id="menu-list-item3" ui-sref="menu.editTransaction" menu-close="">Edit Transactions
                     <i class="icon ion-edit"></i>
                 </ion-item>
-                <ion-item class="item-icon-right  " id="menu-list-item11" ui-sref="menu.disableTransaction" menu-close="">Disable Transactions
+                <ion-item ng-show="disableTransaction" class="item-icon-right  " id="menu-list-item11" ui-sref="menu.disableTransaction" menu-close="">Disable Transactions
                     <i class="icon ion-alert-circled"></i>
                 </ion-item>
-                <ion-item class="item-icon-right  " id="menu-list-item12" ui-sref="menu.transactionList" menu-close="">Transactions list
+                <ion-item class="item-icon-right  " id="menu-list-item12" ui-sref="menu.transactionList" menu-close="" >Transactions list
                     <i class="icon ion-eye"></i>
                 </ion-item>
                 <ion-item class="item-icon-right  " id="menu-list-item13" ui-sref="menu.about" menu-close="">About
                     <i class="icon ion-information-circled"></i>
                 </ion-item>
-                <ion-item class="item-icon-right  " id="menu-list-item14">Log Out
+                <ion-item ui-sref="login" class="item-icon-right  " id="menu-list-item14">Log Out
                     <i class="icon ion-android-exit"></i>
                 </ion-item>
             </ion-list>

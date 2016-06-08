@@ -2,37 +2,24 @@
     <ion-content padding="true" class="has-header">
         <form id="editTransaction-form3" class="list ">
             <ion-list id="editTransaction-list6" class=" ">
-                <label class="item item-select " id="editTransaction-select4">
-                    <span class="input-label">Id:</span>
-                    <select>
-                        <option></option>
-                        <option>Credit</option>
-                    </select>
-                </label>
                 <label class="item item-input " id="editTransaction-input7">
                     <span class="input-label">Rode:</span>
-                    <input type="text" placeholder="">
+                    <input type="text" placeholder="" ng-model="editTrans.rode">
                 </label>
                 <label class="item item-select " id="editTransaction-select8">
                     <span class="input-label">Type:</span>
-                    <select>
+                    <select id="selectT">
                         <option>Debit</option>
                         <option>Credit</option>
                     </select>
                 </label>
-                <label class="item item-select " id="editTransaction-select7">
-                    <span class="input-label">Status:</span>
-                    <select>
-                        <option>Active</option>
-                        <option>Inactive</option>
-                    </select>
-                </label>
+
                 <label class="item item-input " id="editTransaction-input16">
                     <span class="input-label">Date:</span>
-                    <input type="text" placeholder="">
+                    <input type="text" placeholder="" ng-model="editTrans.date">
                 </label>
             </ion-list>
-            <button id="editTransaction-button3" class=" button button-positive  button-block ">Edit</button>
+            <button ng-click="transEdit();" id="editTransaction-button3" class=" button button-positive  button-block ">Edit</button>
         </form>
     </ion-content>
 </ion-view>
