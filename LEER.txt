@@ -1,0 +1,5 @@
+* BD -> examenmov 
+
+-> debe insertar un usuario primero! postman o pgadmin
+
+-> Editar: debe insertar un valor en todos los campos
